@@ -33,11 +33,11 @@ namespace StreamingServer.SocketServer.Runner
 			DependencyContainer.Instance.Resolve<IStreamingClient>().Init(streamingUrl, false);
 
 			var settings = new ServerSettings
-						   {
-							   Port = Settings.Port(), 
-							   Backlog = Settings.Backlog(), 
-							   BufferSize = Settings.BufferSize()
-						   };
+			{
+				Port = Settings.Port(),
+				Backlog = Settings.Backlog(),
+				BufferSize = Settings.BufferSize()
+			};
 
 			var protocol = DependencyContainer.Instance.Resolve<IProtocol>();
 

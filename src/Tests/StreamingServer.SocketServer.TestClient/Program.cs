@@ -51,7 +51,7 @@ namespace StreamingServer.SocketServer.TestClient
 
 		private static void SubscribeToClientAccountMargin(string userName, string session, string clientId)
 		{
-			var request = new Request {UserName = userName, SessionToken = session, RequestType = "CLIENTACCOUNTMARGIN"};
+			var request = new Request { UserName = userName, SessionToken = session, RequestType = "CLIENTACCOUNTMARGIN" };
 
 			var client = new AsynchronousClient(clientId);
 			client.StartClient(request);
@@ -59,7 +59,7 @@ namespace StreamingServer.SocketServer.TestClient
 
 		private static void SubscribeToTradeMargin(string userName, string session, string clientId)
 		{
-			var request = new Request {UserName = userName, SessionToken = session, RequestType = "TRADEMARGIN"};
+			var request = new Request { UserName = userName, SessionToken = session, RequestType = "TRADEMARGIN" };
 
 			var client = new AsynchronousClient(clientId);
 			client.StartClient(request);
@@ -68,12 +68,12 @@ namespace StreamingServer.SocketServer.TestClient
 		private static void SubscribeToPrices(string userName, string session, string prices, string clientId)
 		{
 			var request = new Request
-						  {
-							  UserName = userName,
-							  SessionToken = session,
-							  RequestType = "PRICES",
-							  Parameters = prices
-						  };
+			{
+				UserName = userName,
+				SessionToken = session,
+				RequestType = "PRICES",
+				Parameters = prices
+			};
 
 			var client = new AsynchronousClient(clientId);
 			client.StartClient(request);

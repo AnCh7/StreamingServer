@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{60816E34-9997-404A-833A-44C7A536129C}</ProjectGuid>
+    <ProjectGuid>{69539323-E7B2-4ED1-8C80-BD31E16FCA81}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>StreamingServer.LightstreamerClient</RootNamespace>
@@ -31,7 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DotNetClient_N2">
-      <HintPath>..\..\dependencies\DotNetClient_N2.dll</HintPath>
+      <HintPath>..\..\..\dependencies\DotNetClient_N2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -58,7 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\StreamingServer.Common\StreamingServer.Common.csproj">
-      <Project>{BEB1D20A-FD71-4F34-B288-B7E92A95ADB8}</Project>
+      <Project>{F63213C8-B533-4771-ADD7-47D48D328C15}</Project>
       <Name>StreamingServer.Common</Name>
     </ProjectReference>
   </ItemGroup>

@@ -4,13 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{990A6C07-1926-43A4-8A7D-2EEE6CD4DA17}</ProjectGuid>
+    <ProjectGuid>{BC74D27B-6100-471D-AA4F-AAC0D2CA2F61}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>StreamingServer.SocketServer.Runner</RootNamespace>
     <AssemblyName>StreamingServer.SocketServer.Runner</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,11 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Autofac">
-      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
-    </Reference>
-    <Reference Include="NLog, Version=3.2.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\NLog.3.2.0.0\lib\net45\NLog.dll</HintPath>
+      <HintPath>..\..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -55,22 +53,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\CityIndex\StreamingServer.CityIndexLightstreamerClient\StreamingServer.CityIndexLightstreamerClient.csproj">
-      <Project>{64F0AF21-13CF-4507-B3F9-7A974869BD8A}</Project>
+      <Project>{49DBFF7F-CB55-4A08-9D5B-9A4D1B518CC1}</Project>
       <Name>StreamingServer.CityIndexLightstreamerClient</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Core\StreamingServer.DependencyInjection\StreamingServer.DependencyInjection.csproj">
-      <Project>{11873A2D-6513-48EB-BDD8-E3329BA1BC7E}</Project>
+      <Project>{847E63D6-B726-4971-A084-1E5E0346BA8D}</Project>
       <Name>StreamingServer.DependencyInjection</Name>
     </ProjectReference>
     <ProjectReference Include="..\StreamingServer.SocketServer\StreamingServer.SocketServer.csproj">
-      <Project>{957C3E0A-D73D-488F-AD42-B847900CED62}</Project>
+      <Project>{95229643-E65D-4F69-B7AD-FBCE3166E34A}</Project>
       <Name>StreamingServer.SocketServer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

@@ -4,14 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{11873A2D-6513-48EB-BDD8-E3329BA1BC7E}</ProjectGuid>
+    <ProjectGuid>{847E63D6-B726-4971-A084-1E5E0346BA8D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>StreamingServer.DependencyInjection</RootNamespace>
     <AssemblyName>StreamingServer.DependencyInjection</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -33,10 +33,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Autofac">
-      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
+      <HintPath>..\..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
     </Reference>
     <Reference Include="NLog">
-      <HintPath>..\packages\NLog.3.2.0.0\lib\net45\NLog.dll</HintPath>
+      <HintPath>..\..\packages\NLog.3.2.0.0\lib\net45\NLog.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -55,34 +55,28 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\CityIndex\StreamingServer.CityIndexLightstreamerClient\StreamingServer.CityIndexLightstreamerClient.csproj">
-      <Project>{64F0AF21-13CF-4507-B3F9-7A974869BD8A}</Project>
+      <Project>{49DBFF7F-CB55-4A08-9D5B-9A4D1B518CC1}</Project>
       <Name>StreamingServer.CityIndexLightstreamerClient</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\CityIndex\StreamingServer.CityIndexWebClient\StreamingServer.CityIndexWebClient.csproj">
-      <Project>{ACB0DFD0-7D6C-44D9-93FE-2512933107E0}</Project>
+      <Project>{98B16864-B5DA-4DC2-B0D5-E1CE3D7A5160}</Project>
       <Name>StreamingServer.CityIndexWebClient</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\SocketServer\StreamingServer.SocketServer\StreamingServer.SocketServer.csproj">
-      <Project>{957C3E0A-D73D-488F-AD42-B847900CED62}</Project>
+      <Project>{95229643-E65D-4F69-B7AD-FBCE3166E34A}</Project>
       <Name>StreamingServer.SocketServer</Name>
     </ProjectReference>
     <ProjectReference Include="..\StreamingServer.Common\StreamingServer.Common.csproj">
-      <Project>{BEB1D20A-FD71-4F34-B288-B7E92A95ADB8}</Project>
+      <Project>{F63213C8-B533-4771-ADD7-47D48D328C15}</Project>
       <Name>StreamingServer.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\StreamingServer.Core\StreamingServer.Core.csproj">
-      <Project>{B7AE907A-C497-47C1-AB87-7DA517B43BDE}</Project>
+      <Project>{5745C810-B656-4DAD-8D8A-82C2088BD06D}</Project>
       <Name>StreamingServer.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
-  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

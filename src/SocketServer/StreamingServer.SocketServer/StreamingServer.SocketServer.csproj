@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{957C3E0A-D73D-488F-AD42-B847900CED62}</ProjectGuid>
+    <ProjectGuid>{95229643-E65D-4F69-B7AD-FBCE3166E34A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>StreamingServer.SocketServer</RootNamespace>
@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IProtocol.cs" />
+    <Compile Include="Interfaces\IProtocolHandler.cs" />
     <Compile Include="Models\Constants.cs" />
     <Compile Include="Models\Request.cs" />
     <Compile Include="Models\Response.cs" />
@@ -46,8 +48,6 @@
     <Compile Include="Monitor\ServerMonitor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SocketServer.cs" />
-    <Compile Include="Interfaces\IProtocol.cs" />
-    <Compile Include="Interfaces\IProtocolHandler.cs" />
     <Compile Include="TransportLayer\Protocol.cs" />
     <Compile Include="TransportLayer\ProtocolState.cs" />
     <Compile Include="TransportLayer\RequestBuilder.cs" />

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B7AE907A-C497-47C1-AB87-7DA517B43BDE}</ProjectGuid>
+    <ProjectGuid>{5745C810-B656-4DAD-8D8A-82C2088BD06D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>StreamingServer.Core</RootNamespace>
@@ -30,9 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac">
-      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -55,19 +52,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\CityIndex\StreamingServer.CityIndexLightstreamerClient\StreamingServer.CityIndexLightstreamerClient.csproj">
-      <Project>{64F0AF21-13CF-4507-B3F9-7A974869BD8A}</Project>
+      <Project>{49DBFF7F-CB55-4A08-9D5B-9A4D1B518CC1}</Project>
       <Name>StreamingServer.CityIndexLightstreamerClient</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\SocketServer\StreamingServer.SocketServer\StreamingServer.SocketServer.csproj">
-      <Project>{957C3E0A-D73D-488F-AD42-B847900CED62}</Project>
+      <Project>{95229643-E65D-4F69-B7AD-FBCE3166E34A}</Project>
       <Name>StreamingServer.SocketServer</Name>
     </ProjectReference>
     <ProjectReference Include="..\StreamingServer.Common\StreamingServer.Common.csproj">
-      <Project>{BEB1D20A-FD71-4F34-B288-B7E92A95ADB8}</Project>
+      <Project>{F63213C8-B533-4771-ADD7-47D48D328C15}</Project>
       <Name>StreamingServer.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\StreamingServer.LightstreamerClient\StreamingServer.LightstreamerClient.csproj">
-      <Project>{60816E34-9997-404A-833A-44C7A536129C}</Project>
+      <Project>{69539323-E7B2-4ED1-8C80-BD31E16FCA81}</Project>
       <Name>StreamingServer.LightstreamerClient</Name>
     </ProjectReference>
   </ItemGroup>
