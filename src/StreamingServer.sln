@@ -1,0 +1,103 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CityIndex", "CityIndex", "{A0919149-27CC-4835-86BF-7F43D89451E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SocketServer", "SocketServer", "{2826F8DB-41F9-4857-A3B6-EAF36B7BE4D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E35A1948-78FC-485A-A984-17292DA41A51}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{61D2FADF-612E-4967-8EF4-F9A934B268E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamingServer.SocketServer.TestClient", "Tests\StreamingServer.SocketServer.TestClient\StreamingServer.SocketServer.TestClient.csproj", "{F892F2F3-8F05-4054-B20B-A839D62050DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamingServer.Tests", "Tests\StreamingServer.Tests\StreamingServer.Tests.csproj", "{21343442-3D2B-4B09-96BC-A3283A71153E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamingServer.SocketServer", "SocketServer\StreamingServer.SocketServer\StreamingServer.SocketServer.csproj", "{957C3E0A-D73D-488F-AD42-B847900CED62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamingServer.SocketServer.Runner", "SocketServer\StreamingServer.SocketServer.Runner\StreamingServer.SocketServer.Runner.csproj", "{990A6C07-1926-43A4-8A7D-2EEE6CD4DA17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamingServer.CityIndexLightstreamerClient", "CityIndex\StreamingServer.CityIndexLightstreamerClient\StreamingServer.CityIndexLightstreamerClient.csproj", "{64F0AF21-13CF-4507-B3F9-7A974869BD8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamingServer.CityIndexWebClient", "CityIndex\StreamingServer.CityIndexWebClient\StreamingServer.CityIndexWebClient.csproj", "{ACB0DFD0-7D6C-44D9-93FE-2512933107E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{742F11C4-7918-4743-9351-46B2B5CA6FEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamingServer.Common", "Core\StreamingServer.Common\StreamingServer.Common.csproj", "{BEB1D20A-FD71-4F34-B288-B7E92A95ADB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamingServer.Core", "Core\StreamingServer.Core\StreamingServer.Core.csproj", "{B7AE907A-C497-47C1-AB87-7DA517B43BDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamingServer.DependencyInjection", "Core\StreamingServer.DependencyInjection\StreamingServer.DependencyInjection.csproj", "{11873A2D-6513-48EB-BDD8-E3329BA1BC7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamingServer.LightstreamerClient", "Core\StreamingServer.LightstreamerClient\StreamingServer.LightstreamerClient.csproj", "{60816E34-9997-404A-833A-44C7A536129C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F892F2F3-8F05-4054-B20B-A839D62050DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F892F2F3-8F05-4054-B20B-A839D62050DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F892F2F3-8F05-4054-B20B-A839D62050DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F892F2F3-8F05-4054-B20B-A839D62050DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21343442-3D2B-4B09-96BC-A3283A71153E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21343442-3D2B-4B09-96BC-A3283A71153E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21343442-3D2B-4B09-96BC-A3283A71153E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21343442-3D2B-4B09-96BC-A3283A71153E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{957C3E0A-D73D-488F-AD42-B847900CED62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{957C3E0A-D73D-488F-AD42-B847900CED62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{957C3E0A-D73D-488F-AD42-B847900CED62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{957C3E0A-D73D-488F-AD42-B847900CED62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{990A6C07-1926-43A4-8A7D-2EEE6CD4DA17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{990A6C07-1926-43A4-8A7D-2EEE6CD4DA17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{990A6C07-1926-43A4-8A7D-2EEE6CD4DA17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{990A6C07-1926-43A4-8A7D-2EEE6CD4DA17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64F0AF21-13CF-4507-B3F9-7A974869BD8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64F0AF21-13CF-4507-B3F9-7A974869BD8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64F0AF21-13CF-4507-B3F9-7A974869BD8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64F0AF21-13CF-4507-B3F9-7A974869BD8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACB0DFD0-7D6C-44D9-93FE-2512933107E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACB0DFD0-7D6C-44D9-93FE-2512933107E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACB0DFD0-7D6C-44D9-93FE-2512933107E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACB0DFD0-7D6C-44D9-93FE-2512933107E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEB1D20A-FD71-4F34-B288-B7E92A95ADB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEB1D20A-FD71-4F34-B288-B7E92A95ADB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEB1D20A-FD71-4F34-B288-B7E92A95ADB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEB1D20A-FD71-4F34-B288-B7E92A95ADB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7AE907A-C497-47C1-AB87-7DA517B43BDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7AE907A-C497-47C1-AB87-7DA517B43BDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7AE907A-C497-47C1-AB87-7DA517B43BDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7AE907A-C497-47C1-AB87-7DA517B43BDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11873A2D-6513-48EB-BDD8-E3329BA1BC7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11873A2D-6513-48EB-BDD8-E3329BA1BC7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11873A2D-6513-48EB-BDD8-E3329BA1BC7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11873A2D-6513-48EB-BDD8-E3329BA1BC7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60816E34-9997-404A-833A-44C7A536129C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60816E34-9997-404A-833A-44C7A536129C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60816E34-9997-404A-833A-44C7A536129C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60816E34-9997-404A-833A-44C7A536129C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F892F2F3-8F05-4054-B20B-A839D62050DF} = {61D2FADF-612E-4967-8EF4-F9A934B268E4}
+		{21343442-3D2B-4B09-96BC-A3283A71153E} = {61D2FADF-612E-4967-8EF4-F9A934B268E4}
+		{957C3E0A-D73D-488F-AD42-B847900CED62} = {2826F8DB-41F9-4857-A3B6-EAF36B7BE4D5}
+		{990A6C07-1926-43A4-8A7D-2EEE6CD4DA17} = {2826F8DB-41F9-4857-A3B6-EAF36B7BE4D5}
+		{64F0AF21-13CF-4507-B3F9-7A974869BD8A} = {A0919149-27CC-4835-86BF-7F43D89451E2}
+		{ACB0DFD0-7D6C-44D9-93FE-2512933107E0} = {A0919149-27CC-4835-86BF-7F43D89451E2}
+		{BEB1D20A-FD71-4F34-B288-B7E92A95ADB8} = {742F11C4-7918-4743-9351-46B2B5CA6FEB}
+		{B7AE907A-C497-47C1-AB87-7DA517B43BDE} = {742F11C4-7918-4743-9351-46B2B5CA6FEB}
+		{11873A2D-6513-48EB-BDD8-E3329BA1BC7E} = {742F11C4-7918-4743-9351-46B2B5CA6FEB}
+		{60816E34-9997-404A-833A-44C7A536129C} = {742F11C4-7918-4743-9351-46B2B5CA6FEB}
+	EndGlobalSection
+EndGlobal
